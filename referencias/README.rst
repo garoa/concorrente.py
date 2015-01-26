@@ -33,11 +33,11 @@ Brian K. Quinlan, `The future is soon!`__ -- This talk introduces PEP 3148, a pr
 
 Guido van Rossum `Tulip: Async I/O for Python 3`__  (Twitter University)
 
-__ https://www.youtube.com/watch?v=1coLC-MUCJc
+.. __: https://www.youtube.com/watch?v=1coLC-MUCJc
 
 Guido van Rossum `Tulip`__ (January 2014) (Linked.in)
 
-__ https://www.youtube.com/watch?v=aurOB4qYuFM
+.. __: https://www.youtube.com/watch?v=aurOB4qYuFM
 
 Dino Viehland `Using futures for async GUI programming in Python 3.3`__ (PyCon US 2013)
 
