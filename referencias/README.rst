@@ -5,20 +5,16 @@ Referências sobre programação concorrente
 Frases
 ======
 
-Rob Pike (co-inventor da linguagem Go), slide #5 de `Concurrency is not Parallelism (it's better)`__ 
+Rob Pike (co-inventor da linguagem Go), slide #5 de `Concurrency is not Parallelism (it's better) <http://concur.rspace.googlecode.com/hg/talk/concur.html#slide-5>`_ 
 
     Concurrency is about dealing with lots of things at once.<br>
     Parallelism is about doing lots of things at once.
-
-__ http://concur.rspace.googlecode.com/hg/talk/concur.html#slide-5
 
 David Beazley (professor e autor de livros sobre Python), slide #9 de "A Curious Course on Coroutines and Concurrency" (PyCon 2009 tutorial):
 
     Concurrency: one of the most dificult topics in computer science (usually best avoided).
 
-Michele Simionato, em `Threads, processes and concurrency in Python: some thoughts`__.
-
-__ http://www.artima.com/weblogs/viewpost.jsp?thread=299551
+Michele Simionato, em `Threads, processes and concurrency in Python: some thoughts <http://www.artima.com/weblogs/viewpost.jsp?thread=299551>`_
 
     The people bashing threads are typically system programmers which have in mind use cases that the typical application programmer will never encounter in her life. [...] In 99% of the use cases an application programmer is likely to run into, the simple pattern of spawning a bunch of independent threads and collecting the results in a queue is everything one needs to know.
 
