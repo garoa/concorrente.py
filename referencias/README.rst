@@ -27,11 +27,11 @@ __ http://www.artima.com/weblogs/viewpost.jsp?thread=299551
 Apresentações
 =============
 
-Brian K. Quinlan, `The future is soon!`_ -- This talk introduces PEP 3148, a proposed library that makes it easier to build concurrent applications or modify existing application to exploit opportunities for parallelism.
+Brian K. Quinlan, `The future is soon!`__ -- This talk introduces PEP 3148, a proposed library that makes it easier to build concurrent applications or modify existing application to exploit opportunities for parallelism.
 
 __ http://www.pyvideo.org/video/480/pyconau-2010--the-future-is-soon
 
-Guido van Rossum `Tulip: Async I/O for Python 3`_  (Twitter University)
+Guido van Rossum `Tulip: Async I/O for Python 3`__  (Twitter University)
 
 __ https://www.youtube.com/watch?v=1coLC-MUCJc
 
