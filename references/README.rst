@@ -1,8 +1,8 @@
-=========================================
-Referências sobre programação concorrente
-=========================================
+=================================================
+References about concurrent programming in Python
+=================================================
 
-Frases
+Quotes
 ======
 
 Rob Pike (co-inventor da linguagem Go), slide #5 de `Concurrency is not Parallelism (it's better) <http://concur.rspace.googlecode.com/hg/talk/concur.html#slide-5>`_ 
@@ -27,11 +27,10 @@ Michele Simionato, em `Threads, processes and concurrency in Python: some though
 
 
 
-Apresentações
-=============
+Videos
+======
 
 Brian K. Quinlan, `The future is soon! <http://www.pyvideo.org/video/480/pyconau-2010--the-future-is-soon>`_ -- This talk introduces PEP 3148, a proposed library that makes it easier to build concurrent applications or modify existing application to exploit opportunities for parallelism.
-
 
 
 Guido van Rossum `Tulip: Async I/O for Python 3 <https://www.youtube.com/watch?v=1coLC-MUCJc>`_  (Twitter University)
@@ -59,8 +58,9 @@ Posts
 
 - Bruce Eckcel (autor de *Thinking in Java*), `Coroutines, Concurrency & Distributed Systems <http://python-3-patterns-idioms-test.readthedocs.org/en/latest/CoroutinesAndConcurrency.html>`_
 
-Documentação oficial
-====================
+
+Official docs
+=============
 
 - `PEP 371 <https://www.python.org/dev/peps/pep-0371/>`_ -- Addition of the multiprocessing package to the standard library`
 
@@ -83,6 +83,3 @@ Examples
 - `Concurrent HTTP Requests with Python3 and asyncio <http://geekgirl.io/concurrent-http-requests-with-python3-and-asyncio/>`_
 
 - GvR answers: `asyncio.wait(*futures) trap <http://comments.gmane.org/gmane.comp.python.tulip/1737>`_
-
-
-
