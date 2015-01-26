@@ -5,7 +5,7 @@ Referências sobre programação concorrente
 Frases
 ======
 
-Rob Pike (co-inventor da linguagem Go), slide #5 de `Concurrency is not Parallelism (it's better) <http://concur.rspace.googlecode.com/hg/talk/concur.html#slide-5> <>`_ 
+Rob Pike (co-inventor da linguagem Go), slide #5 de `Concurrency is not Parallelism (it's better) <http://concur.rspace.googlecode.com/hg/talk/concur.html#slide-5>`_ 
 
     Concurrency is about dealing with lots of things at once.
 
@@ -21,7 +21,7 @@ David Beazley (professor e autor de livros sobre Python), slide #9 de "A Curious
 
     Concurrency: one of the most dificult topics in computer science (usually best avoided).
 
-Michele Simionato, em `Threads, processes and concurrency in Python: some thoughts <http://www.artima.com/weblogs/viewpost.jsp?thread=299551> <>`_
+Michele Simionato, em `Threads, processes and concurrency in Python: some thoughts <http://www.artima.com/weblogs/viewpost.jsp?thread=299551>`_
 
     The people bashing threads are typically system programmers which have in mind use cases that the typical application programmer will never encounter in her life. [...] In 99% of the use cases an application programmer is likely to run into, the simple pattern of spawning a bunch of independent threads and collecting the results in a queue is everything one needs to know.
 
@@ -47,8 +47,7 @@ Posts
 
 - Shannon Behrens, `Concurrency and Python <http://www.drdobbs.com/open-source/concurrency-and-python/206103078?pgno=1>`_ (Dr. Dobb's Journal, February 3, 2008)
 
-- Doug Hellmann, `Communication Between Processes <http://pymotw.com/2/multiprocessing/communication.html#multiprocessing-queues
->`_ -- multiprocessing queues
+- Doug Hellmann, `Communication Between Processes <http://pymotw.com/2/multiprocessing/communication.html#multiprocessing-queues>`_ -- multiprocessing queues
 
 - Jesse Noller (autor do pacote `multiprocessing`) -- `Python Threads and the Global Interpreter Lock <http://jessenoller.com/2009/02/01/python-threads-and-the-global-interpreter-lock/>`_ 
 
