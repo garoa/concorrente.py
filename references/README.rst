@@ -17,7 +17,7 @@ Rob Pike (co-inventor da linguagem Go), slide #5 de `Concurrency is not Parallel
 
     Concurrency provides a way to structure a solution to solve a problem that may (but not necessarily) be parallelizable.
 
-David Beazley (professor e autor de livros sobre Python), slide #9 de "A Curious Course on Coroutines and Concurrency" (PyCon 2009 tutorial):
+David Beazley (professor e autor de livros sobre Python), slide #9 de `A Curious Course on Coroutines and Concurrency <http://www.dabeaz.com/coroutines/>`_ (PyCon 2009 tutorial):
 
     Concurrency: one of the most dificult topics in computer science (usually best avoided).
 
@@ -83,3 +83,11 @@ Examples
 - `Concurrent HTTP Requests with Python3 and asyncio <http://geekgirl.io/concurrent-http-requests-with-python3-and-asyncio/>`_
 
 - GvR answers: `asyncio.wait(*futures) trap <http://comments.gmane.org/gmane.comp.python.tulip/1737>`_
+
+
+More links
+==========
+
+- `Python Async IO Resources <http://asyncio.org/>`_: Libraries, docs, talks, tutorials, blogs
+
+

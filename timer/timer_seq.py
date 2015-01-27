@@ -1,8 +1,13 @@
+import sys
 import time
 
-def main():
-    for remaining in range(5, 0, -1):
-	    print('Remaining: ', remaining) 
+
+def main(duration):
+    for remaining in range(duration, 0, -1):
+        print('Remaining: ', remaining)
+        time.sleep(1)
+
 
 if __name__ == '__main__':
-    main()
+    duration = int(sys.argv[1]) if len(sys.argv) == 2 else 5
+    main(duration)
