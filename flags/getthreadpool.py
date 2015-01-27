@@ -6,17 +6,18 @@ import time
 
 from getsequential import fetch
 
+DEFAULT_LIMIT = sys.maxsize
 DEFAULT_NUM_THREADS = 100
 GLOBAL_TIMEOUT = 300  # seconds
 
 times = {}
 
-def main(source, num_threads):
+def main(source, limit, num_threads):
     pool = futures.ThreadPoolExecutor(num_threads)
     pending = {}
     t0 = time.time()
     # submit all jobs
-    for iso_cc in sorted(cf.cc2name):
+    for iso_cc in sorted(cf.cc2name)[:limit]:
         print('get:', iso_cc)
         times[iso_cc] = [time.time() - t0]
         job = pool.submit(fetch, iso_cc, source)
@@ -44,11 +45,13 @@ if __name__ == '__main__':
     source_names = ', '.join(sorted(cf.SOURCE_URLS))
     parser = argparse.ArgumentParser(description='Download flag images.')
     parser.add_argument('source', help='one of: ' + source_names)
+    parser.add_argument('-l', '--limit', type=int, metavar='N', default=DEFAULT_LIMIT,
+                        help='limit download to N files')
     parser.add_argument('-t', '--threads', type=int, default=DEFAULT_NUM_THREADS,
                    help='number of threads (default: %s)' % DEFAULT_NUM_THREADS)
 
     args = parser.parse_args()
-    main(args.source, args.threads)
+    main(args.source, args.limit, args.threads)
 
 """
 From CIA, 1 thread:

@@ -1,7 +1,9 @@
 import requests
 import countryflags as cf
 import time
+import sys
 
+DEFAULT_LIMIT = sys.maxsize
 
 times = {}
 
@@ -14,8 +16,8 @@ def fetch(iso_cc, source):
         written = img.write(resp.content)
     return written, file_name
 
-def main(source):
-    pending = sorted(cf.cc2name)
+def main(source, limit):
+    pending = sorted(cf.cc2name)[:limit]
     to_download = len(pending)
     downloaded = 0
     t0 = time.time()
@@ -41,9 +43,11 @@ if __name__ == '__main__':
     source_names = ', '.join(sorted(cf.SOURCE_URLS))
     parser = argparse.ArgumentParser(description='Download flag images.')
     parser.add_argument('source', help='one of: ' + source_names)
+    parser.add_argument('-l', '--limit', type=int, metavar='N', default=DEFAULT_LIMIT,
+                        help='limit download to N files')
 
     args = parser.parse_args()
-    main(args.source)
+    main(args.source, args.limit)
 
 """
 From cia.gov:
